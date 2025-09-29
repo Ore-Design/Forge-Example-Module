@@ -1,0 +1,22 @@
+plugins
+{
+    id 'java-library'
+}
+
+repositories
+{
+	mavenCentral()
+}
+
+dependencies
+{
+    annotationProcessor project(':api')
+    annotationProcessor 'com.fasterxml.jackson.core:jackson-databind:2.18.3'
+    annotationProcessor 'org.projectlombok:lombok:1.18.38'
+
+    implementation project(':api')
+    implementation 'ch.qos.logback:logback-core:1.5.18'
+    implementation 'ch.qos.logback:logback-classic:1.5.18'
+    implementation 'org.projectlombok:lombok:1.18.38'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.3'
+}
